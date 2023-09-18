@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className='min-h-screen'>
           {children}
+          </div>
 
           <ThemeToggle className=" absolute top-6 right-6"  />
         </ThemeProvider>
